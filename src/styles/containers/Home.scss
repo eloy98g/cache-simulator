@@ -1,0 +1,20 @@
+.banner{
+  padding-left: 70px; 
+  line-height: 55px;
+  letter-spacing: 0.05em;
+  font-size: 47px;
+}
+
+.subtitle{
+  -webkit-text-stroke: 1px black;
+  color: transparent; 
+}
+
+@media screen and (max-width: 800px){
+  .banner{
+    padding-left: 32px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    font-size: 32px;
+  }
+}

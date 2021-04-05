@@ -1,0 +1,13 @@
+{
+  "name": "cache-simulator",
+  "short_name": "cache-simulator",
+  "start_url": ".",
+  "description": "Cache simulator Gomez",
+  "icons": [
+      {
+          "src": "../src/styles/static/Icon.png",
+          "sizes": "48x48",
+          "type": "image/png"
+      }
+  ]
+}
