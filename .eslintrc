@@ -6,6 +6,13 @@
     "plugins": [
       "prettier"
     ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
     "rules": {
       "react/jsx-filename-extension": [
         1,
