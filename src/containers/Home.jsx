@@ -1,6 +1,26 @@
 import React from 'react';
-import InputLightButton from '../components/InputLightButton';
 import '../styles/containers/Home.scss';
+
+const InputButton = () => {
+  return (
+    <input
+      className="input"
+      type="text"
+      autoComplete="off"
+      name="name"
+      required
+    />
+  );
+};
+
+const LoginButton = () => {
+  return (
+    <button type="button" className="button">
+      {' '}
+      Log In
+    </button>
+  );
+};
 
 const Home = () => {
   return (
@@ -8,11 +28,13 @@ const Home = () => {
       <div className="window">
         <div className="window-content">
           <p>CACHE SIMULATOR</p>
-          <InputLightButton />
+          <InputButton text="Username or Email" />
+          <InputButton text="Password" />
+          <LoginButton />
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Home;
