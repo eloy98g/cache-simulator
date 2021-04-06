@@ -1,13 +1,15 @@
 import React from 'react';
 import '../styles/containers/Home.scss';
 
-const InputButton = () => {
+const InputButton = (props) => {
+  const pps = {...props}
   return (
     <input
       className="input"
       type="text"
       autoComplete="off"
       name="name"
+      placeholder={pps.text}
       required
     />
   );
