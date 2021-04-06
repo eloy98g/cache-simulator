@@ -1,11 +1,17 @@
 //@import url('http://db.onlinewebfonts.com/c/150037e11f159dca84bc4c04549094b6?family=Averta-Regular');
 
-@font-face {
-  font-family: 'Averta-regular';
-  src: local('Averta-regular'), url('./fonts/Averta-regular/Averta-Regular/Averta-Regular.ttf') format('truetype');
-}
+/**FONTS**/
+// @font-face {
+//   font-family: 'Averta-regular';
+//   src: local('Averta-regular'), url('./fonts/Averta-regular/Averta-Regular/Averta-Regular.ttf') format('truetype');
+// }
 
-@font-face {
-  font-family: 'Averta-bold';
-  src: local('Averta-bold'), url('./fonts/Averta-bold/Averta-Bold/Averta-Bold.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'Averta-bold';
+//   src: local('Averta-bold'), url('./fonts/Averta-bold/Averta-Bold/Averta-Bold.ttf') format('truetype');
+// }
+
+/**COLORS**/
+//Login
+$blue-primary: #516cc0;
+$blue-accent: #8d99be;

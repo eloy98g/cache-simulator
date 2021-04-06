@@ -1,3 +1,5 @@
+@import '../Vars.scss';
+
 .window {
   background-image: url('../static/background.png');
   background-size: cover;
@@ -7,16 +9,18 @@
   align-items: center;
   padding: 0;
   margin: 0;
-}
-
-.window-content {
-  width: 100%;
-  height: 100%;
   padding-left: 140px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: center;
+}
+
+.window-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input {
@@ -33,7 +37,7 @@
 .button {
   border-radius: 50px;
   border: none;
-  background-color: #516cc0;
+  background-color: $blue-primary;
   color: white;
   width: 375px;
   height: 50px;
@@ -48,5 +52,15 @@
 }
 
 .button:hover {
-  background-color: #8d99be;
+  background-color: $blue-accent;
+}
+
+.link{
+  color: $blue-primary;
+  text-decoration: none;
+}
+
+.title {
+  margin-bottom: 28px;
+  font-size: 18px;
 }
