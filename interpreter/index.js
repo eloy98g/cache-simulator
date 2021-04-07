@@ -1,3 +1,5 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable no-console */
 const code ='int suma = 0;for(int i=0; i < 10; i++){  suma = suma + suma;}';
 
 // var result = code.split("");
@@ -6,16 +8,16 @@ const code ='int suma = 0;for(int i=0; i < 10; i++){  suma = suma + suma;}';
 
 
 
-let intRe = /int(.*?)\;/g;
-let scRe = /;/g;
+const intRe = /int (.*?)=/g;
+const scRe = /;/g;
 
 const array = [...code.matchAll(intRe)];
-for(var i = 0; i<array.length; i++){
+for(let i = 0; i<array.length; i++){
   console.log(array[i]);
 }
 
 /* FOR */
-//si hay un FOR, los dos siguientes ; no los recoge
+// si hay un FOR, los dos siguientes ; no los recoge
 // let forRe = /for.*\{/;
 
 //   var result = code.search(forRe);

@@ -46,7 +46,6 @@
   align-items: center;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 28px;
   cursor: pointer;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
@@ -56,8 +55,13 @@
 }
 
 .link{
+  margin-top: 28px;
   color: $blue-primary;
   text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .title {
