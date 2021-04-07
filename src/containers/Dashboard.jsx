@@ -1,19 +1,31 @@
 /* eslint-disable */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import '../styles/containers/Dashboard.scss';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
-  const [count, setCount] = useState(0);
-
-  // De forma similar a componentDidMount y componentDidUpdate
-  useEffect(() => {
-    // Actualiza el título del documento usando la API del navegador
-    document.title = `You clicked ${count} times`;
-  });
-
   return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+    <div className="dashboard">
+      <div className="dashboard-content">
+        <div className="sidebar">
+          <div className="sb-buttons">
+            <button type="button" className="sb-button">
+              Simulador
+            </button>
+            <button type="button" className="sb-button">
+              Manual Usuario
+            </button>
+            <button type="button" className="sb-button">
+              Cuenta
+            </button>
+          </div>
+          <Link to="/">
+            <button type="button" className="sb-button">
+              Cerrar Sesión
+            </button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

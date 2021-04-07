@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/containers/Home.scss';
 
@@ -40,12 +40,16 @@ const Home = () => {
   return (
     <div className="window">
       <div className="window-content">
-        <h3 className="title">{isUser ? 'User Login': 'Admin Login'}</h3>
-        <InputButton text="Username or Email" />
-        <InputButton text="Password" />
+        <h3 className="title">
+          {isUser
+            ? 'Inicio de sesión Usuario'
+            : 'Inicio de sesión Administrador'}
+        </h3>
+        <InputButton text="Usuario o correo" />
+        <InputButton text="Contraseña" />
         <LoginButton />
         <p className="link" onClick={() => handleChange()}>
-          {isUser ? 'Acceso como Administrador': 'Acceso como Usuario'}
+          {isUser ? 'Acceso como Administrador' : 'Acceso como Usuario'}
         </p>
       </div>
     </div>

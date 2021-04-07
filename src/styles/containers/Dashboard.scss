@@ -1,0 +1,54 @@
+@import '../Vars.scss';
+
+.dashboard {
+  background-color: $primary-lighten;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.sidebar{
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $primary-darken;
+  align-items: center;
+}
+
+.sb-buttons{
+  margin-top: 90px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sb-button {
+  border: none;
+  background-color: $blue-primary;
+  color: white;
+  width: 200px;
+  height: 50px;
+  outline: none;
+  justify-content: center;
+  margin-bottom: 44px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.sb-button:hover {
+  background-color: $blue-accent;
+}
