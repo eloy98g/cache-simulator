@@ -1,0 +1,50 @@
+@import '../Vars.scss';
+
+.container {
+  width: 100%;
+  height: 32px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid $primary-darken;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-lighten;
+  cursor: pointer;
+  outline: none;
+
+  .selected{
+    background-color: red;
+  }
+}
+
+.item .selected {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+  background-color: red;
+}
+
+.container .item:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container .item:nth-child(2n) {
+  border-left: none;
+}
+
+.container .item:nth-last-child(2n) {
+  border-right: none;
+}
+
+.container .item:nth-last-child(1) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

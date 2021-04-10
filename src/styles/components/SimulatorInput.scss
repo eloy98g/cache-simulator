@@ -1,19 +1,27 @@
 @import '../Vars.scss';
 
-.container{
+.sim-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   width: 80%;
+  max-width: 900px;
   height: 70%;
+  max-height: 600;
 }
 
-.content{
+.sim-content{
   width: 100%;
   height: 100%;
   background-color: $primary;
   border: 1px solid $primary-darken;
+  border-radius: 10px;
+  display: column;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .text{
@@ -21,4 +29,42 @@
   font-weight: lighter;
   color: $primary-darken;
   margin-bottom: 10px;
+}
+
+.content-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sim-item{
+  margin-bottom: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sim-title {
+  font-size: 18px;
+}
+
+.sim-input{
+  border-radius: 10px;
+  border: 1px solid $primary-darken;
+  width: 100px;
+  height: 32px;
+  outline: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.sim-separator {
+  width: 100%;
+  border-bottom: 1px solid $primary-darken;
 }
