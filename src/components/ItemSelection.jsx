@@ -6,13 +6,10 @@ const ItemSelection = (props) => {
     const currentElement = document.getElementsByClassName('selected');
     const newElement = document.getElementById(item);
 
-    console.log(`current: ${currentElement[0].id}`);
-    console.log(`nuevo: ${newElement.id}`);
-
-    newElement.classList.add('selected');
     if(currentElement.length > 0){
       currentElement[0].classList.remove('selected');
     }
+    newElement.classList.add('selected');
   };
 
   const pps = { ...props };

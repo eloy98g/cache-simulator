@@ -20,15 +20,10 @@
   background-color: $primary-lighten;
   cursor: pointer;
   outline: none;
-
-  .selected{
-    background-color: red;
-  }
 }
 
-.item .selected {
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
-  background-color: red;
+.selected {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .container .item:nth-child(1) {
