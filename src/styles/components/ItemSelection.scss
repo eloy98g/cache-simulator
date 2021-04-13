@@ -20,6 +20,7 @@
   background-color: $primary-lighten;
   cursor: pointer;
   outline: none;
+  font-size: 18px;
 }
 
 .selected {
@@ -35,8 +36,8 @@
   border-left: none;
 }
 
-.container .item:nth-last-child(2n) {
-  border-right: none;
+.container .item:nth-child(3n) {
+  border-left: none;
 }
 
 .container .item:nth-last-child(1) {
