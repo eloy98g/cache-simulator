@@ -31,11 +31,11 @@ const SimulatorInput = () => {
         <div className="sim-separator" style={{marginBottom: '20px'}} />
         <div className="content-row">
           <p className="sim-title">Tipo de reemplazo</p>
-          <ItemSelection items={['LRU', 'FIFO', 'ALEATORIO']} />
+          <ItemSelection name="reemplazo" items={['LRU', 'FIFO', 'ALEATORIO']} />
         </div>
         <div className="content-row" style={{marginTop: '20px'}}>
           <p className="sim-title">Tipo de mapeo</p>
-          <ItemSelection items={['Directo', 'Por conjuntos', 'Asociativo']} />
+          <ItemSelection name="mapeo" items={['Directo', 'Por conjuntos', 'Asociativo']} />
         </div>
         <div className="sim-separator" style={{marginTop: '20px'}} />
       </div>
