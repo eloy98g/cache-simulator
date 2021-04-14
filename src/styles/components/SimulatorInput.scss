@@ -7,8 +7,8 @@
   align-items: flex-start;
   width: 80%;
   max-width: 900px;
-  height: 70%;
-  max-height: 600;
+  height: 90%;
+  max-height: 800px;
 }
 
 .sim-content{
@@ -18,12 +18,17 @@
   border: 1px solid $primary-darken;
   border-radius: 10px;
   display: column;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   padding-top: 100px;
   padding-left: 100px;
   padding-right: 100px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
+.sim-content::-webkit-scrollbar {
+  display: none;
+}
 .text{
   font-size: 24px;
   font-weight: lighter;
@@ -67,4 +72,27 @@
 .sim-separator {
   width: 100%;
   border-bottom: 1px solid $primary-darken;
+}
+
+.but-next-cont{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.button-next{
+  width: 75px;
+  height: 40px;
+  background-color: $primary;
+  border: 1px solid $primary-darken;
+  border-radius: 10px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  outline: none;
 }

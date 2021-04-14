@@ -43,8 +43,11 @@ const SimulatorInput = () => {
             items={['Directo', 'Por conjuntos', 'Asociativo']}
           />
         </div>
-        <div className="sim-separator" style={{ marginTop: '20px' }} />
-        <b style={{ marginTop: '20px' }}>Avanzadas</b>
+        <div
+          className="sim-separator"
+          style={{ marginTop: '20px', marginBottom: '20px' }}
+        />
+        <b>Avanzadas</b>
         <div style={{ marginTop: '20px' }} className="content-row">
           <p className="sim-title" style={{ marginRight: '10px' }}>
             Tipo de caché
@@ -65,6 +68,11 @@ const SimulatorInput = () => {
             items={['Ubicar en escritura', 'No ubicar en escritura']}
           />
         </div>
+      </div>
+      <div className="but-next-cont">
+        <button type="button" className="button-next" onClick={() => {}}>
+          <i className="fas fa-long-arrow-alt-right" />
+        </button>
       </div>
     </div>
   );
